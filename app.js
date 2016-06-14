@@ -11,34 +11,34 @@ else{
   alert('WRONG - I actually do have a dog');
 }
 
-var answer2 = promt('Have I been to New York City?')
+var answer2 = prompt('Have I been to New York City?');
 if(answer2 === 'yes') {
-  alert('Correct! I visted New York City once!')
+  alert('Correct! I visted New York City once!');
 }
 else{
-  alert('Wrong! - I actually have been to New York City')
+  alert('Wrong! - I actually have been to New York City');
 }
 
-var answer3 = promt('Do I love jello?')
+var answer3 = prompt('Do I love jello?');
 if(answer3 === 'yes') {
-  alert('Wong!!! No way, I can\'t stand jello')
+  alert('Wong!!! No way, I can\'t stand jello');
 }
 else{
-  alert('Correct! Jello is not real food, and I do not like it.')
+  alert('Correct! Jello is not real food, and I do not like it.');
 }
 
-var answer4 = prompt('Have I ever parachuted before?')
+var answer4 = prompt('Have I ever parachuted before?');
 if(answer4 === 'yes'){
-  alert('Wrong! I would never jump out of an airplane')
-  }
+  alert('Wrong! I would never jump out of an airplane');
+}
 else{
-  alert('Right! I play it safe everyday.')
+  alert('Right! I play it safe everyday.');
 }
 
-var answer5 = prompt('Do I enjoy pancakes?')
+var answer5 = prompt('Do I enjoy pancakes?');
 if(answer5 === 'yes') {
-  alert('Of Course! Doesn\'t everyone like pancakes!')
+  alert('Of Course! Doesn\'t everyone like pancakes!');
 }
 else{
-  alert('You are wrong! Pancakes are the best.')
+  alert('You are wrong! Pancakes are the best.');
 }
