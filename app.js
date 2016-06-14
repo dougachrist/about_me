@@ -1,7 +1,7 @@
 'use strict';
 
 var userName = prompt('Greetings!!! What is your name?');
-alert('Welcome ' + userName + ' glad you\'re here!');
+alert('Welcome ' + userName + ' glad you\'re here! \nI have a short quiz about me for you to complete');
 
 var answer1 = prompt('Do I have a dog?').toLowerCase();
 if (answer1 === 'yes') {

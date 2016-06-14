@@ -4,4 +4,13 @@
 
 .navList {
   display: inline;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  text-align: center;
 }
