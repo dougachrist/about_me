@@ -27,4 +27,10 @@ else{
   alert('Correct! jello is not real food, and I do not like it')
 }
 
-var answer4 = prompt('')
+var answer4 = prompt('Have I ever parachuted before?')
+if(answer4 === 'yes'){
+  alert('Wrong! I would never jump out of an airplane')
+  }
+else{
+  alert('Right! I play it safe everyday.')
+}
