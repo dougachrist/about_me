@@ -3,12 +3,12 @@
 var userName = prompt('Greetings!!! What is your name?');
 alert('Welcome ' + userName + ' glad you\'re here!');
 
-var answer1 = prompt('does sam have 3 cats?').toLowerCase();
+var answer1 = prompt('Do I have a dog?').toLowerCase();
 if (answer1 === 'yes') {
-  alert('Right! he has 3 cats named Bob, Ryan, and Matt');
+  alert('Right! Her name is Lucy');
 }
 else{
-  alert('WRONG - he actually has 3 cats');
+  alert('WRONG - I actually do have a dog');
 }
 
 var answer2 = promt('Have I been to New York City?')
@@ -21,10 +21,10 @@ else{
 
 var answer3 = promt('Do I love jello?')
 if(answer3 === 'yes') {
-  alert('Wong!!! No way, i can\'t stand jello')
+  alert('Wong!!! No way, I can\'t stand jello')
 }
 else{
-  alert('Correct! jello is not real food, and I do not like it')
+  alert('Correct! Jello is not real food, and I do not like it.')
 }
 
 var answer4 = prompt('Have I ever parachuted before?')
@@ -33,4 +33,12 @@ if(answer4 === 'yes'){
   }
 else{
   alert('Right! I play it safe everyday.')
+}
+
+var answer5 = prompt('Do I enjoy pancakes?')
+if(answer5 === 'yes') {
+  alert('Of Course! Doesn\'t everyone like pancakes!')
+}
+else{
+  alert('You are wrong! Pancakes are the best.')
 }
