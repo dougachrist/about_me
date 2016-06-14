@@ -19,4 +19,12 @@ else{
   alert('Wrong! - I actually have been to New York City')
 }
 
-var answer3 = promt('')
+var answer3 = promt('Do I love jello?')
+if(answer3 === 'yes') {
+  alert('Wong!!! No way, i can\'t stand jello')
+}
+else{
+  alert('Correct! jello is not real food, and I do not like it')
+}
+
+var answer4 = prompt('')
