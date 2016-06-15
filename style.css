@@ -1,4 +1,4 @@
-
+/* navList will center horizontally*/
 .navList {
   text-align: center;
   display: inline;
@@ -32,12 +32,6 @@ h2 {
   color:#996633
 }
 
-.quizSection {
-  width: 300px;
-  height: 300px;
-  margin: auto;
-}
-
 .quizButton {
   width: 200px;
   height: 100px;
@@ -46,21 +40,10 @@ h2 {
   margin: 100px auto 100px auto;
   text-align: center;
   color: black;
-
-}
-
-.quizButton p {
-
-}
-
-div .responses {
-  width: 200px;
-  height: 100px;
-  background-color: gray;
 }
 
 button {
-margin-top: 35px;
+  margin-top: 35px;
 }
 
 footer {
