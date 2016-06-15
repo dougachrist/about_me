@@ -8,16 +8,28 @@
 nav ul {
   text-align: center;
   padding-left: 0;
+  color: #669999
+}
 
+footer ul {
+  text-align: center;
+  padding-left: 0;
+}
+
+section ul {
+  margin: auto;
+  width: 300px;
 }
 
 h1 {
   padding-top: 20px;
   text-align: center;
+  color: red;
 }
 
 h2 {
   text-align: center;
+  color:#996633
 }
 
 .quizSection {
@@ -53,5 +65,8 @@ margin-top: 35px;
 
 footer {
   padding-top: 20px;
-  text-align: center;
+}
+
+section li {
+  margin: 5px;
 }
