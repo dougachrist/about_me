@@ -6,7 +6,7 @@ function startGame() {
   alert('Welcome ' + userName + ', glad you\'re here! \nI have a short quiz about me for you to complete.');
 
   var answer1 = prompt('Do I have a dog?').toLowerCase();
-  if (answer1 === 'yes' || answer1 === 'y') {
+  if(answer1 === 'yes' || answer1 === 'y') {
     alert('Right! Her name is Lucy.');
   }
   else{
@@ -14,7 +14,7 @@ function startGame() {
   }
 
   var answer2 = prompt('Have I been to New York City?').toLowerCase();
-  if(answer2 === 'yes'|| answer2 === 'y') {
+  if(answer2 === 'yes' || answer2 === 'y') {
     alert('Correct! I visted New York City once!');
   }
   else{
@@ -22,7 +22,7 @@ function startGame() {
   }
 
   var answer3 = prompt('Do I love jello?').toLowerCase();
-  if(answer3 === 'yes'|| answer3 === 'y') {
+  if(answer3 === 'yes' || answer3 === 'y') {
     alert('Wong!!! No way, I can\'t stand jello.');
   }
   else{
@@ -30,7 +30,7 @@ function startGame() {
   }
 
   var answer4 = prompt('Have I ever parachuted before?').toLowerCase();
-  if(answer4 === 'yes'|| answer4 === 'y'){
+  if(answer4 === 'yes' || answer4 === 'y'){
     alert('Wrong! I would never jump out of an airplane.');
   }
   else{
@@ -38,7 +38,7 @@ function startGame() {
   }
 
   var answer5 = prompt('Do I enjoy pancakes?').toLowerCase();
-  if(answer5 === 'yes'|| answer5 === 'y') {
+  if(answer5 === 'yes' || answer5 === 'y') {
     alert('Of Course! Doesn\'t everyone love pancakes!');
   }
   else{
