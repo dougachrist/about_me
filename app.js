@@ -124,9 +124,10 @@ function startGame() {
     }
     trysLeft = trysLeft - 1;
   }
-}
 
 // CorrectTally counter
 
-var correctTallyPercent = parseIne(correctTally / 100);
-alert('Congrats! you got ' + correctTally + ' out of 7 questions. \n \n That is an amazing ' + correctTallyPercent + '%' );
+  var correctTallyPer = ( (correctTally / 7) * 100);
+  var correctTallyPerInt = parseInt(correctTallyPer);
+  alert('Congrats! you got ' + correctTally + ' out of 7 questions. \n \n That is an amazing ' + correctTallyPerInt + '%' );
+}
