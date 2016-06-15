@@ -1,15 +1,26 @@
 
 .navList {
+  text-align: center;
   display: inline;
   margin: 20px;
 }
+nav {
+  margin-top: 20px;
+}
 
 h1 {
+  padding-top: 20px;
+  text-align: center;
+}
+
+h2 {
   text-align: center;
 }
 
 ul {
-  text-align: center;
+margin-left: 0px;
+padding: 0;
+text-align: center;
 }
 
 .quizSection {
@@ -24,12 +35,21 @@ ul {
   background-color: gray;
   border: 10px solid red;
   margin: 100px auto 100px auto;
-  padding: auto;
   text-align: center;
   color: black;
 
 }
 
 .quizButton p {
-  padding: auto;
+
+}
+
+div .responses {
+  width: 200px;
+  height: 100px;
+  background-color: gray;
+}
+
+button {
+  margin: center;
 }
