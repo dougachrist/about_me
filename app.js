@@ -88,5 +88,32 @@ function startGame() {
   // }
   // console.log('after while loop');
 
-
+  var correctBeers = ['Firestone','Fat Tire','Blue Moon'];
+  var response = prompt('You have 6 attempts to guess my 3 favorite beers \n \n GO FOR IT!').toLowerCase();
+  var counter = 1;
+  var favBeer = false;
+  for( var counter = 1 ; counter <= 6; counter++){
+    for(var i = 0; i < correctBeers.length; i++ ){
+      if(response === correctBeers[i]){
+        //alert('Correct: ' + correctBeers[i] + 'is one of my favorite beers \n \n My Favorite beers are' + correctBeers);
+        var favBeer = true;
+      }
+      else{
+        favBeer = false;
+        i = i + 1;
+      }
+    }
+    if(favBeer = true){
+      alert('Correct: ' + correctBeers[i] + 'is one of my favorite beers \n \n My Favorite beers are' + correctBeers);
+      i = 7;
+    }
+    else if(favBeer = false && i < 6){
+      respone = prompt('Sorry that was NOT one of my favorite Beers.\n\n you have: ' + trysLeft + ' tries left');
+      i = i + 1;
+    }
+    else if(favBeer = false && i >= 6){
+      respone = prompt('Sorry that was NOT one of my favorite Beers.\n\n My favorite Beers are ACTUALLY\n\n' + correctBeers );
+      i = i + 1;
+    }
+  }
 }
