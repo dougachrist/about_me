@@ -52,4 +52,19 @@ footer {
 
 section li {
   margin: 5px;
+
+}
+
+section ol {
+  margin: auto;
+  width: 300px;
+  }
+
+section ol li{
+  margin-left: 10px;
+}
+
+body{
+  background-color: #ebebe0;
+
 }
