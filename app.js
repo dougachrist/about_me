@@ -3,11 +3,13 @@
 // using a function to start the process when the button is clicked
 function startGame() {
   var correctTally = 0;
+  var userName;
   function runUserName() {
 
 // Greeting the user
-    var userName = prompt('Greetings!!! What is your name?');
+    userName = prompt('Greetings!!! What is your name?');
     alert('Welcome ' + userName + ', glad you\'re here! \nI have a short quiz about me for you to complete.');
+    console.log(userName + ' has stated the game');
   }
 // Strech Goal - creating arrays for Questions, Answers, & Responses
   function askPersonalQuestions() {
@@ -42,8 +44,10 @@ function startGame() {
       if(answerA === answersArray[i] || answerAFirst === answersArray[i].substring(0,1)){
         alert(responsesArray[0][i]);
         correctTally++;
+        console.log(userName + ' answered question ' + (i + 1) + ' correctly');
       } else {
         alert(responsesArray[1][i]);
+        console.log(userName + ' answered question ' + (i + 1) + ' incorrectly');
       }
     }
   }
@@ -140,9 +144,9 @@ function startGame() {
     var correctTallyPerInt = parseInt(correctTallyPer);
     alert('Congrats! you got ' + correctTally + ' out of 7 questions. \n \n That is an amazing ' + correctTallyPerInt + '%' );
   }
-  //runUserName();
-  //askPersonalQuestions();
+  runUserName();
+  askPersonalQuestions();
 //  guessNumberGame();
-  askBeerQuestion();
+//  askBeerQuestion();
 //  runTally();
 }
