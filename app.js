@@ -89,8 +89,21 @@ function startGame() {
   function askBeerQuestion() {
   // Question 7 guess Beers
 
+    function printArray(myArray) { //code to print array with spaces.
+      var newArray = [];
+      for(var i = 0; i < myArray.length; i++) {
+        if(i === 0) {
+          newArray[0] = myArray[i];
+        } else if(i === (myArray.length - 1)){
+          newArray[i] = ' and ' + myArray[i];
+        } else {
+          newArray[i] = ' ' + myArray[i]; // not sure if this line will work
+        }
+      }
+      return newArray;
+    }
+
     var myBeers = ['Firestone','Fat Tire','Blue Moon'];
-    var myBeersSpace = ['Firestone',' Fat Tire',' Blue Moon'];
     var response = prompt('You have 6 attempts to guess my 3 favorite beers \n \n GO FOR IT!').toLowerCase();
     var counter = 1;
     var favBeer = 0;
@@ -105,7 +118,7 @@ function startGame() {
         }
       }
       if(rightBeer === 1) {
-        alert('Correct: ' + myBeers[favBeerNumb] + ' is one of my favorite beers. \n \n My favorite beers are: ' + myBeersSpace);
+        alert('Correct: ' + myBeers[favBeerNumb] + ' is one of my favorite beers. \n \n My favorite beers are: ' + printArray(myBeers));
         counter = 7;
         correctTally++;
       } else if(favBeer === 0 && counter < 6) {
@@ -116,7 +129,7 @@ function startGame() {
         }
         response = prompt('Sorry that was NOT one of my favorite beers.\n\n you have: ' + trysLeft + ' ' + tries + ' left').toLowerCase();
       } else if(favBeer === 0 && counter >= 6) {
-        alert('Sorry, that was NOT one of my favorite beers.\n\n My favorite beers are ACTUALLY\n\n' + myBeersSpace );
+        alert('Sorry, that was NOT one of my favorite beers.\n\n My favorite beers are ACTUALLY\n\n' + printArray(myBeers) );
       }
       trysLeft = trysLeft - 1;
     }
@@ -127,9 +140,9 @@ function startGame() {
     var correctTallyPerInt = parseInt(correctTallyPer);
     alert('Congrats! you got ' + correctTally + ' out of 7 questions. \n \n That is an amazing ' + correctTallyPerInt + '%' );
   }
-  runUserName();
-  askPersonalQuestions();
-  guessNumberGame();
+  //runUserName();
+  //askPersonalQuestions();
+//  guessNumberGame();
   askBeerQuestion();
-  runTally();
+//  runTally();
 }
