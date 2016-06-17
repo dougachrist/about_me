@@ -56,28 +56,32 @@ function startGame() {
     var correctNumber = 2;
     var i = 0;
     var tryLeft = 4 - i;
-    var userGuess = (prompt('You have 4 attempts to guess a number between 1 and 10. \n \n GO FOR IT!'));
+    var userGuess = prompt('You have 4 attempts to guess a number between 1 and 10. \n \n GO FOR IT!');
     var userGuessInt = parseInt(userGuess);  // convert entry to a number so we can evaluate it.
     var userCorrect = 0;
     while(i < 4) {
-      console.log(userGuess);
       if(userGuessInt < 1 || userGuessInt > 10) {
+        console.log(userName + ' guess a number outside of range');
         userGuess = prompt('Outside of the range: \n \n Please enter a number between 1 and 10. \n(attemps remaining: ' + tryLeft + ')');
         userGuessInt = parseInt(userGuess);
       } else if( Number.isInteger(parseFloat(userGuess)) !== true ) {
+        console.log(userName + ' guessed a number that was not an integer');
         userGuess = prompt('Not an integer.\n \nPlease enter a number between 1 and 10.\n(attemps remaining: ' + tryLeft + ')');
         userGuessInt = parseInt(userGuess);
       } else if( (userGuessInt < correctNumber) && (i < 3) ) {
+        console.log(userName + ' guessed a number that was too low');
         tryLeft--;
         userGuess = prompt('Sorry, that number is too LOW.\n \nPlease enter another number between 1 and 10.\n(attemps remaining: ' + tryLeft + ')');
         userGuessInt = parseInt(userGuess);
         i++;
       } else if( (userGuessInt > correctNumber) && (i < 3) ) {
+        console.log(userName + ' guessed a number that was too high');
         tryLeft--;
         userGuess = prompt('Sorry, that number is too HIGH.\n \nPlease enter another number between 1 and 10.\n(attemps remaining: ' + tryLeft + ')' );
         userGuessInt = parseInt(userGuess);
         i++;
       } else if (userGuessInt === correctNumber) {
+        console.log(userName + ' guessed the correct number');
         alert('That is so awesomwe! You got it RIGHT!');
         correctTally++;
         i = 6;
@@ -112,9 +116,9 @@ function startGame() {
     var counter = 1;
     var favBeer = 0;
     var trysLeft = 5;
-    for( var counter = 1 ; counter <= 6; counter++) {
-      for( var i = 0; i < myBeers.length; i++ ) {
-        if(response === myBeers[i].toLowerCase() ) {
+    for(var counter = 1 ; counter <= 6; counter++) {
+      for(var i = 0; i < myBeers.length; i++) {
+        if(response === myBeers[i].toLowerCase()) {
           var favBeerNumb = i;
           var rightBeer = 1;
         } else {
@@ -122,10 +126,12 @@ function startGame() {
         }
       }
       if(rightBeer === 1) {
+        console.log(userName + ' guessed a correct beer');
         alert('Correct: ' + myBeers[favBeerNumb] + ' is one of my favorite beers. \n \n My favorite beers are: ' + printArray(myBeers));
         counter = 7;
         correctTally++;
       } else if(favBeer === 0 && counter < 6) {
+        console.log(userName + ' guessed an incorrect beer');
         if(counter < 5) { // need a simple if stmt to change between "tries" and "try"
           var tries = 'tries';
         } else {
@@ -133,6 +139,7 @@ function startGame() {
         }
         response = prompt('Sorry that was NOT one of my favorite beers.\n\n you have: ' + trysLeft + ' ' + tries + ' left').toLowerCase();
       } else if(favBeer === 0 && counter >= 6) {
+        console.log(userName + ' guessed an incorrect beer on the last try');
         alert('Sorry, that was NOT one of my favorite beers.\n\n My favorite beers are ACTUALLY\n\n' + printArray(myBeers) );
       }
       trysLeft = trysLeft - 1;
@@ -146,7 +153,7 @@ function startGame() {
   }
   runUserName();
   askPersonalQuestions();
-//  guessNumberGame();
-//  askBeerQuestion();
-//  runTally();
+  guessNumberGame();
+  askBeerQuestion();
+  runTally();
 }
