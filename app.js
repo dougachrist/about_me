@@ -56,7 +56,7 @@ function startGame() {
     var correctNumber = 2;
     var i = 0;
     var tryLeft = 4 - i;
-    var userGuess = prompt('You have 4 attempts to guess a number between 1 and 10. \n \n GO FOR IT!');
+    var userGuess = prompt('You have 4 attempts to guess my favorite number between 1 and 10. \n \n GO FOR IT!');
     var userGuessInt = parseInt(userGuess);  // convert entry to a number so we can evaluate it.
     var userCorrect = 0;
     while(i < 4) {
